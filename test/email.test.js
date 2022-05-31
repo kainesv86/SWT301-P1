@@ -1,7 +1,9 @@
 const { changeEmail } = require("../email");
 const { faker } = require("@faker-js/faker");
-describe("User actions", () => {
+
+describe("Email function", () => {
         let user;
+
         beforeEach(() => {
                 user = {
                         name: faker.name.findName(),

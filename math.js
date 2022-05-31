@@ -1,13 +1,16 @@
-function sum(a, b) {
-        return a + b;
+function square(a) {
+        return a * a;
 }
 
 const findMax = (arr) => {
+        if (!arr || arr.length <= 0) {
+                return null;
+        }
         return Math.max(...arr);
 };
 
 const MathJS = {
-        sum,
+        square,
         findMax,
 };
 
